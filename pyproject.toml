@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "webui"
+version = "0.1.0"
+description = ""
+authors = ["Oleg Komkov <okomkov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "webui", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+starlette = "^0.39.0"
+uvicorn = "^0.30.6"
+uvloop = "^0.20.0"
+jinja2 = "^3.1.4"
+asgi-htmx = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
